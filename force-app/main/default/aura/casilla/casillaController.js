@@ -2,7 +2,6 @@
     myAction : function(component, event, helper) {
 
     },
-    
     recibirClic : function(component, event, helper) {
         var myAttribute = component.get("v.clase");
 

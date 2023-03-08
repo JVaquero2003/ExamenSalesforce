@@ -109,7 +109,7 @@
             component.set("v.score", numScore+1);
         }
         else{
-            alert("GameOver")
+            alert("Fallaste, Continua Jugando con el contador a 0")
             component.set("v.score", 0);
         }
         var evento = $A.get("e.c:reloadApexMethod");
@@ -123,9 +123,8 @@
 
 
     },
-    reiniciarGame : function(component, event){
-        component.set("v.score", 0);
-        var evento = $A.get("e.c:reloadApexMethod");
-        evento.fire();
+    ejecutoDosFunciones : function(component,event, helper){
+        helper.reiniciarGame(component)
+        helper.callApex(component, event)
     }
 })

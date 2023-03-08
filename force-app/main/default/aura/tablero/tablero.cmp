@@ -26,9 +26,8 @@
     <br/>
     <span>Tu ultima puntuacion ha sido {!v.highscore}</span>
     <br/>
-    <lightning:button class="btn" label="Play" onclick="{!c.callApex}" />
+    <lightning:button class="btn" label="Play" onclick="{!c.ejecutoDosFunciones}" />
     <lightning:button class="btn" label="Stop" onclick="{!c.stopGame}" />
-    <lightning:button class="btn" label="Reset" onclick="{!c.reiniciarGame}" />
     <br/>
 
     <c:tabla/>

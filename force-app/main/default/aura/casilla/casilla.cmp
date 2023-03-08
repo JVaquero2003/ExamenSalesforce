@@ -1,6 +1,8 @@
 <aura:component>
+    <aura:attribute name="componentTablero" type="Aura.component"></aura:attribute>
     <aura:attribute name="clase" type="string" />
     <aura:attribute name="numIntento" type="Integer" default="0"/>
 
     <input class="{!v.clase}" type="button" value="Topo" onclick="{!c.recibirClic}"/>
+    <aura:method name="funcionCasilla" action="{!c.ricibirClic}"></aura:method>
 </aura:component>	
