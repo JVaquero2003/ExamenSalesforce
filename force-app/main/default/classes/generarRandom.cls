@@ -9,7 +9,7 @@ public with sharing class generarRandom {
         try {
             Integer nuevoNumero;
             do {
-                nuevoNumero = Math.mod(Math.abs(Crypto.getRandomInteger()), 4) + 1;
+                nuevoNumero = Math.mod(Math.abs(Crypto.getRandomInteger()), 8) + 1;
             } while (nuevoNumero == numeroAnterior);
             numeroAnterior = nuevoNumero;
             return nuevoNumero;

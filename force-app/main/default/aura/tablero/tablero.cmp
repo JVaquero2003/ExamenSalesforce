@@ -18,6 +18,14 @@
             <td> <c:casilla aura:id="3" /> </td>
             <td> <c:casilla aura:id="4" /> </td>
         </tr>
+        <tr>
+            <td> <c:casilla aura:id="5" /> </td>
+            <td> <c:casilla aura:id="6" /> </td>
+        </tr>
+        <tr>
+            <td> <c:casilla aura:id="7" /> </td>
+            <td> <c:casilla aura:id="8" /> </td>
+        </tr>
     </table>
     <br/>
     <span>Tu ultima puntuacion ha sido {!v.highscore}</span>
