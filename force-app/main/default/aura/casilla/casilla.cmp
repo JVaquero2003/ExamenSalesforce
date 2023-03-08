@@ -1,0 +1,6 @@
+<aura:component>
+    <aura:attribute name="clase" type="string" />
+    <aura:attribute name="numIntento" type="Integer" default="0"/>
+
+    <input class="{!v.clase}" type="button" value="Play" onclick="{!c.recibirClic}"/>
+</aura:component>	
