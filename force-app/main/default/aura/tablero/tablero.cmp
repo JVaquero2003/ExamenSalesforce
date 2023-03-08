@@ -13,16 +13,12 @@
         <tr>
             <td> <c:casilla aura:id="1" /> </td>
             <td> <c:casilla aura:id="2" /> </td>
-        </tr>
-        <tr>
             <td> <c:casilla aura:id="3" /> </td>
             <td> <c:casilla aura:id="4" /> </td>
         </tr>
         <tr>
             <td> <c:casilla aura:id="5" /> </td>
             <td> <c:casilla aura:id="6" /> </td>
-        </tr>
-        <tr>
             <td> <c:casilla aura:id="7" /> </td>
             <td> <c:casilla aura:id="8" /> </td>
         </tr>
@@ -32,4 +28,8 @@
     <br/>
     <lightning:button label="Play" onclick="{!c.callApex}" />
     <lightning:button label="Stop" onclick="{!c.stopGame}" />
+    <lightning:button label="Reset" onclick="{!c.reiniciarGame}" />
+    <br/>
+
+    <c:tabla/>
 </aura:component>	

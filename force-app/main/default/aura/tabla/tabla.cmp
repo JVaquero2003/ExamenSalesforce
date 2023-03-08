@@ -1,0 +1,6 @@
+<aura:component>
+		<aura:attribute name="partida" type="Integer" default="0"/>
+		<aura:attribute name="score" type="Integer" default="0"/>
+
+		<input type="button" value="Guardar Partida" onclick="{!c.numeroPartidas}"></input>
+</aura:component>	

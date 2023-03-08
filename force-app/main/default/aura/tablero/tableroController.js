@@ -116,11 +116,16 @@
         evento.fire();
     },
     stopGame : function(component, event){
-        alert("Perdiste perdedor");
+        alert("Has Finalizado tu partida");
         component.set("v.highscore", component.get("v.score"));
         component.set("v.score", 0);
 
 
 
+    },
+    reiniciarGame : function(component, event){
+        component.set("v.score", 0);
+        var evento = $A.get("e.c:reloadApexMethod");
+        evento.fire();
     }
 })

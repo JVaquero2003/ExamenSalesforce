@@ -2,5 +2,5 @@
     <aura:attribute name="clase" type="string" />
     <aura:attribute name="numIntento" type="Integer" default="0"/>
 
-    <input class="{!v.clase}" type="button" value="Play" onclick="{!c.recibirClic}"/>
+    <input class="{!v.clase}" type="button" value="Topo" onclick="{!c.recibirClic}"/>
 </aura:component>	
