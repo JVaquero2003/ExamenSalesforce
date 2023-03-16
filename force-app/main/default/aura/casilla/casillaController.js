@@ -2,7 +2,7 @@
     myAction : function(component, event, helper) {
 
     },
-    recibirClic : function(component, event, helper) {
+    jugada : function(component, event, helper) {
         var myAttribute = component.get("v.clase");
 
         if (myAttribute == "color") {
@@ -19,5 +19,9 @@
             });
             evento.fire();
         }
-    }   
+    },
+    recibirClic : function(component, event,helper){
+        var casilla = component.find("clase").getElement();
+        $A.util.addClass(casilla, "color")
+    }
 })

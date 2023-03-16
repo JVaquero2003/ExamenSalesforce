@@ -1,6 +1,17 @@
 <aura:component>
-		<aura:attribute name="partida" type="Integer" default="0"/>
-		<aura:attribute name="score" type="Integer" default="0"/>
+		<aura:attribute name="historico" type="Integer[]"/>
+		<aura:handler event="c:partidasJugadas" action="{!c.guardarPartida}"/>
 
-		<input type="button" value="Guardar Partida" onclick="{!c.numeroPartidas}"></input>
+		<table>
+			<tr>
+				<th>Partida</th>
+				<th>Intentos</th>
+			</tr>
+			<aura:iteration  items="{!v.historico}" var="ronda" indexVar="index">
+				<tr>
+					<td>{!index + 1}</td>
+					<td>{!ronda}</td>
+				</tr>
+			</aura:iteration>
+		</table>
 </aura:component>	

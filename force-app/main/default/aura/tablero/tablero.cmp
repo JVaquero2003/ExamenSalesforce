@@ -1,11 +1,13 @@
 <aura:component controller="generarRandom">
-    <aura:attribute name="numero" type="Integer" />
+    <!--<aura:attribute name="numero" type="Integer" />
+    <aura:attribute name="numero2" type="Integer" />-->
+    <aura:attribute name="listaNumeros" type="Integer[]"/>
     <aura:attribute name="numIntento" type="Integer"/>
     <aura:attribute name="sumar" type="Boolean"/>
     <aura:attribute name="score" type="Integer" default="0"/>
     <aura:attribute name="highscore" type="Integer" default="0"/>
     <aura:attribute name="ultimoNumeroGenerado" type="Integer" default="0"/>
-
+    <aura:attribute name="ultimoNumeroGenerado2" type="Integer" default="0"/>
 
     <aura:handler event="c:reloadApexMethod" action="{!c.callApex}"/>
     <aura:handler event="c:almacenarIntentos" action="{!c.aumentarContador}"/>
@@ -30,5 +32,4 @@
     <lightning:button class="btn" label="Stop" onclick="{!c.stopGame}" />
     <br/>
 
-    <c:tabla/>
 </aura:component>	

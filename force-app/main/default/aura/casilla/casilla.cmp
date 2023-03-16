@@ -3,6 +3,7 @@
     <aura:attribute name="clase" type="string" />
     <aura:attribute name="numIntento" type="Integer" default="0"/>
 
-    <input class="{!v.clase}" type="button" value="Topo" onclick="{!c.recibirClic}"/>
-    <aura:method name="funcionCasilla" action="{!c.ricibirClic}"></aura:method>
+    <input class="{!v.clase}" type="button" value="Topo" onclick="{!c.jugada}"/>
+
+    <aura:method name="funcionCasilla" action="{!c.recibirClic}"></aura:method>
 </aura:component>	
